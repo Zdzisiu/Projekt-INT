@@ -1,24 +1,266 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
+  var id = 0;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <table>
+      <tr>
+        <td className="heh" id={id}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="zielony" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+      </tr>
+      <tr>
+        <td className="heh" id={id+=1}></td>
+        <td className="czerwony" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="czerwony" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="zielony" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="zielony" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="zielony" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+      </tr>
+      <tr>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="zielony" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+      </tr>
+      <tr>
+        <td className="heh" id={id+=1}></td>
+        <td className="czerwony" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="czerwony" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="zielony" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="zielony" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="zielony" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+      </tr>
+      <tr>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="zielony" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+      </tr>
+      <tr>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="zielony" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+      </tr>
+      <tr>
+        <td className="czerwony" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+      </tr>
+      <tr>
+        <td className="walk" id={id+=1}></td>
+        <td className="czerwony" id={id+=1}></td>
+        <td className="czerwony" id={id+=1}></td>
+        <td className="czerwony" id={id+=1}></td>
+        <td className="czerwony" id={id+=1}></td>
+        <td className="czerwony" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="zolty" id={id+=1}></td>
+        <td className="zolty" id={id+=1}></td>
+        <td className="zolty" id={id+=1}></td>
+        <td className="zolty" id={id+=1}></td>
+        <td className="zolty" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+      </tr>
+      <tr>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="zolty" id={id+=1}></td>
+      </tr>
+      <tr>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="niebieski" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+      </tr>
+      <tr>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="niebieski" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+      </tr>
+      <tr>
+        <td className="heh" id={id+=1}></td>
+        <td className="niebieski" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="niebieski" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="niebieski" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="zolty" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="zolty" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+      </tr>
+      <tr>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="niebieski" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+      </tr>
+      <tr>
+        <td className="heh" id={id+=1}></td>
+        <td className="niebieski" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="niebieski" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="niebieski" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="zolty" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="zolty" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+      </tr>
+      <tr>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="niebieski" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="walk" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+        <td className="heh" id={id+=1}></td>
+    </tr>
+    </table>
   );
 }
 

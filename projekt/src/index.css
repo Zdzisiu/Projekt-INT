@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+table{
+  margin: 0px;
+}
+td{
+  border: 1px solid black;
+  margin: 0px;
+  padding: 20px;
+}
+
+.heh{
+  border: 0px;
+}
+
+.czerwony{
+  background-color: red;
+}
+.zielony{
+  background-color: green;
+}
+.niebieski{
+  background-color: blue;
+}
+.zolty{
+  background-color: yellow;
+}

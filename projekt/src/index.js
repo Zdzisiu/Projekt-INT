@@ -4,11 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-function diceRoll()
-{
-  return Math.random()*6+1;
-}
-
 function Field(){
 
 }
