@@ -18,7 +18,17 @@ table{
 td{
   border: 1px solid black;
   margin: 0px;
-  padding: 20px;
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
+#game{
+  margin-left: 25%;
+}
+
+button{
+  border: 0;
+  background: none;
 }
 
 .heh{
