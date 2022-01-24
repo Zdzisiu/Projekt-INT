@@ -18,12 +18,21 @@ table{
 td{
   border: 1px solid black;
   margin: 0px;
-  width: 2.5vw;
-  height: 2.5vw;
+  width: 35px;
+  height: 20px;
 }
 
 #game{
-  margin-left: 25%;
+  margin-left: 25px;
+  margin-top: 25px;
+  height: 300px;
+  width: 400px;
+}
+
+#info{
+  float: left;
+  margin-top: -300px;
+  margin-left: 450px;
 }
 
 button{
@@ -31,19 +40,25 @@ button{
   background: none;
 }
 
-.heh{
+.empty{
   border: 0px;
 }
 
-.czerwony{
+.red, .red-start, .red-end{
   background-color: red;
 }
-.zielony{
+.green, .green-start, .green-end{
   background-color: green;
 }
-.niebieski{
+.blue, .blue-start, .blue-end{
   background-color: blue;
 }
-.zolty{
+.yellow, .yellow-start, .yellow-end{
   background-color: yellow;
+}
+
+.pawn{
+  width: 11px;
+  margin-left: 5px;
+  margin-bottom: -4px;
 }

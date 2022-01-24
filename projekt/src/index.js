@@ -25,17 +25,26 @@ const tab = [0,1,2,3,4,5,7,,9,11,19,18,17,16,15,14,13,28,33,34,35,36,37,38,39,48
 const colors = [red,green,blue,yellow];
 
 var square = [];
+var start = [];
 var redUser = [0,0,0,0];
 var blueUser = [0,0,0,0];
 var greenUser = [0,0,0,0];
 var yellowUser = [0,0,0,0];
+
 var id = 0;
-square[5] = red;
+var id_start=0;
+var id_end=0;
 
 function GameRoll(){
   a = diceRoll();
   die = dice[a-1];
-  console.log(a);
+  console.log("kostka"+a);
+
+  /*let b;
+  redUser[0]+=a;
+  b=redUser[0];
+  square[b]=red;
+  console.log("red user:"+b);*/
   return die;
 }
 
@@ -49,12 +58,12 @@ class Info extends React.Component {
 
   render() {
     return (
-  <div id="game">
+  <div id="info">
       <p>Tura: {turn}</p>
       <button onClick={() => this.setState({value: GameRoll()})} width="100px" height="100px"><img src={die} width="100px" height="100px" alt = {a}/></button>
     </div>
   );
-}
+  }
 }
 
 class App extends React.Component {
@@ -70,259 +79,259 @@ class App extends React.Component {
     <div id="game">
     <table>
       <tr>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="walk" id={id}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="zielony" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="walk" id={id}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="green" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
       </tr>
       <tr>
-        <td className="heh"></td>
-        <td className="czerwony"></td>
-        <td className="heh"></td>
-        <td className="czerwony"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="zielony"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="zielony"></td>
-        <td className="heh"></td>
-        <td className="zielony"></td>
-        <td className="heh"></td>
+        <td className="empty"></td>
+        <td className="red-start" id={id_start}><img src={start[id_start]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="red-start" id={id_start+=1}><img src={start[id_start]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="green-end" id={id_end}></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="green-start" id={id_start+=1}><img src={start[id_start]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="green-start" id={id_start+=1}><img src={start[id_start]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
       </tr>
       <tr>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt="" width="100%" height="100%"/></td>
-        <td className="zielony"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="green-end" id={id_end+=1}></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
       </tr>
       <tr>
-        <td className="heh"></td>
-        <td className="czerwony"></td>
-        <td className="heh"></td>
-        <td className="czerwony"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="zielony"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="zielony"></td>
-        <td className="heh"></td>
-        <td className="zielony"></td>
-        <td className="heh"></td>
+        <td className="empty"></td>
+        <td className="red-start" id={id_start+=1}><img src={start[id_start]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="red-start" id={id_start+=1}><img src={start[id_start]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="green-end" id={id_end+=1}></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="green-start" id={id_start+=1}><img src={start[id_start]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="green-start" id={id_start+=1}><img src={start[id_start]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
       </tr>
       <tr>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="zielony"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="green-end" id={id_end+=1}></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
       </tr>
       <tr>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="zielony"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="green-end" id={id_end+=1}></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
       </tr>
       <tr>
-        <td className="czerwony" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
+        <td className="red" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
       </tr>
       <tr>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="czerwony"></td>
-        <td className="czerwony"></td>
-        <td className="czerwony"></td>
-        <td className="czerwony"></td>
-        <td className="czerwony"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="zolty"></td>
-        <td className="zolty"></td>
-        <td className="zolty"></td>
-        <td className="zolty"></td>
-        <td className="zolty"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="red-end" id={id_end+=1}></td>
+        <td className="red-end" id={id_end+=1}></td>
+        <td className="red-end" id={id_end+=1}></td>
+        <td className="red-end" id={id_end+=1}></td>
+        <td className="red-end" id={id_end+=1}></td>
+        <td className="empty" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="yellow-end" id={id_end+=1}></td>
+        <td className="yellow-end" id={id_end+=1}></td>
+        <td className="yellow-end" id={id_end+=1}></td>
+        <td className="yellow-end" id={id_end+=1}></td>
+        <td className="yellow-end" id={id_end+=1}></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
       </tr>
       <tr>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="zolty" id={id+=1}><img src={square[id]} alt=""/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="yellow" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
       </tr>
       <tr>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="niebieski"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="blue-end" id={id_end+=1}></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
       </tr>
       <tr>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="niebieski"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="blue-end" id={id_end+=1}></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
       </tr>
       <tr>
-        <td className="heh"></td>
-        <td className="niebieski"></td>
-        <td className="heh"></td>
-        <td className="niebieski"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="niebieski"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="zolty"></td>
-        <td className="heh"></td>
-        <td className="zolty"></td>
-        <td className="heh"></td>
+        <td className="empty"></td>
+        <td className="blue-start" id={id_start+=1}><img src={start[id_start]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="blue-start" id={id_start+=1}><img src={start[id_start]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="blue-end" id={id_end+=1}></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="yellow-start" id={id_start+=1}><img src={start[id_start]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="yellow-start" id={id_start+=1}><img src={start[id_start]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
       </tr>
       <tr>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="niebieski"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="blue-end" id={id_end+=1}></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
       </tr>
       <tr>
-        <td className="heh"></td>
-        <td className="niebieski"></td>
-        <td className="heh"></td>
-        <td className="niebieski"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="niebieski"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="zolty"></td>
-        <td className="heh"></td>
-        <td className="zolty"></td>
-        <td className="heh"></td>
+        <td className="empty"></td>
+        <td className="blue-start" id={id_start+=1}><img src={start[id_start]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="blue-start" id={id_start+=1}><img src={start[id_start]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="blue-end" id={id_end+=1}></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="yellow-start" id={id_start+=1}><img src={start[id_start]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="yellow-start" id={id_start+=1}><img src={start[id_start]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
       </tr>
       <tr>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="niebieski" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
-        <td className="heh"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="blue" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
     </tr>
     </table>
     </div>
