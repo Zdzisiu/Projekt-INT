@@ -17,7 +17,7 @@ import blue from './img/pionki/blue.png';
 import green from './img/pionki/green.png';
 import yellow from './img/pionki/yellow.png';
 
-var turn,a;
+var turn,a=1;
 var die = one;
 const dice = [one,two,three,four,five,six];
 
@@ -97,6 +97,7 @@ var blueUser4 = {
   current: 0
 };
 
+
 square[greenUser1.track[greenUser1.current]]=green;
 square[greenUser2.track[greenUser2.current]]=green;
 square[greenUser3.track[greenUser3.current]]=green;
@@ -119,10 +120,7 @@ square[blueUser4.track[blueUser4.current]]=blue;
 
 
 
-// for(var i=0; i<62; i++){
-// square[greenUser1.track[i]]=green;
-// console.log(greenUser1.track[i]);
-// }
+
 
 
 function GameRoll(){
@@ -184,7 +182,7 @@ class App extends React.Component {
   return (
     <div id="game">
     <table>
-      <tr>
+      <tr id="siema">
         <td className="heh"></td>
         <td className="heh"></td>
         <td className="heh"></td>
@@ -447,7 +445,7 @@ class App extends React.Component {
 
 
 
-
+// render wszystko
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -456,12 +454,62 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+function steps(){
+  greenUser1.current=greenUser1.current+a;
+  square[greenUser1.track[greenUser1.current]]=green;
+  vanish();
+  start();
+  return square[greenUser1.track[greenUser1.current]];
+}
 
+class Step extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: null,
+    };
+  }
 
+  render() {
+    return (
+      <img onClick={() => this.setState({value: steps()})} src={square[greenUser1.track[greenUser1.current]]}></img>
+  );
+}
+}
 
+function start(){
+ReactDOM.render(
+  <React.StrictMode>
+    <Step />
+  </React.StrictMode>,
+  document.getElementById(greenUser1.track[greenUser1.current])
+);
+}
+start();
 
+function vanish(){
+  ReactDOM.render(
+    <React.StrictMode>
+      <Vanish />
+    </React.StrictMode>,
+    document.getElementById(greenUser1.track[greenUser1.current-a])
+  );
+  }
 
+class Vanish extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: null,
+    };
+  }
 
+  render() {
+    return (
+      <img src=""></img>
+  );
+}
+}
 
 
 // If you want to start measuring performance in your app, pass a function
