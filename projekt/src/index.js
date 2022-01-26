@@ -170,9 +170,9 @@ class App extends React.Component {
         <td className="empty"></td>
         <td className="empty"></td>
         <td className="empty"></td>
-        <td className="walk" id={id}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="zielony" id={id+=1}><img src={square[id]} alt=""/></td>
+        <td className="walk" id={id}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="green" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
         <td className="empty"></td>
         <td className="empty"></td>
         <td className="empty"></td>
@@ -182,19 +182,19 @@ class App extends React.Component {
       </tr>
       <tr>
         <td className="empty"></td>
-        <td className="czerwony" id={id+=1}><img src={square[id]} alt=""/></td>
+        <td className="red" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
         <td className="empty"></td>
-        <td className="czerwony" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="empty"></td>
-        <td className="empty"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="zielony" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
+        <td className="red" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
         <td className="empty"></td>
         <td className="empty"></td>
-        <td className="zielony" id={id+=1}><img src={square[id]} alt=""/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="green" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
         <td className="empty"></td>
-        <td className="zielony" id={id+=1}><img src={square[id]} alt=""/></td>
+        <td className="empty"></td>
+        <td className="green" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="green" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
         <td className="empty"></td>
       </tr>
       <tr>
@@ -205,8 +205,8 @@ class App extends React.Component {
         <td className="empty"></td>
         <td className="empty"></td>
         <td className="walk" id={id+=1}><img src={square[id]} alt="" width="100%" height="100%"/></td>
-        <td className="zielony" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
+        <td className="green" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
         <td className="empty"></td>
         <td className="empty"></td>
         <td className="empty"></td>
@@ -216,36 +216,19 @@ class App extends React.Component {
       </tr>
       <tr>
         <td className="empty"></td>
-        <td className="czerwony" id={id+=1}><img src={square[id]} alt=""/></td>
+        <td className="red" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
         <td className="empty"></td>
-        <td className="czerwony" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="empty"></td>
-        <td className="empty"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="zielony" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
+        <td className="red" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
         <td className="empty"></td>
         <td className="empty"></td>
-        <td className="zielony" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="empty"></td>
-        <td className="zielony" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="empty"></td>
-      </tr>
-      <tr>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="green" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
         <td className="empty"></td>
         <td className="empty"></td>
+        <td className="green" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
         <td className="empty"></td>
-        <td className="empty"></td>
-        <td className="empty"></td>
-        <td className="empty"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="zielony" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="empty"></td>
-        <td className="empty"></td>
-        <td className="empty"></td>
-        <td className="empty"></td>
-        <td className="empty"></td>
+        <td className="green" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
         <td className="empty"></td>
       </tr>
       <tr>
@@ -255,77 +238,9 @@ class App extends React.Component {
         <td className="empty"></td>
         <td className="empty"></td>
         <td className="empty"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="zielony" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="empty"></td>
-        <td className="empty"></td>
-        <td className="empty"></td>
-        <td className="empty"></td>
-        <td className="empty"></td>
-        <td className="empty"></td>
-      </tr>
-      <tr>
-        <td className="czerwony" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-      </tr>
-      <tr>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="czerwony" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="czerwony" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="czerwony" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="czerwony" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="czerwony" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="zolty" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="zolty" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="zolty" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="zolty" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="zolty" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-      </tr>
-      <tr>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="zolty" id={id+=1}><img src={square[id]} alt=""/></td>
-      </tr>
-      <tr>
-        <td className="empty"></td>
-        <td className="empty"></td>
-        <td className="empty"></td>
-        <td className="empty"></td>
-        <td className="empty"></td>
-        <td className="empty"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="niebieski" id={id+=1}></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="green" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
         <td className="empty"></td>
         <td className="empty"></td>
         <td className="empty"></td>
@@ -340,9 +255,77 @@ class App extends React.Component {
         <td className="empty"></td>
         <td className="empty"></td>
         <td className="empty"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="niebieski" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="green" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+      </tr>
+      <tr>
+        <td className="red" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+      </tr>
+      <tr>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="red" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="red" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="red" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="red" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="red" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="yellow" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="yellow" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="yellow" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="yellow" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="yellow" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+      </tr>
+      <tr>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="yellow" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+      </tr>
+      <tr>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="blue" id={id+=1}></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
         <td className="empty"></td>
         <td className="empty"></td>
         <td className="empty"></td>
@@ -352,31 +335,14 @@ class App extends React.Component {
       </tr>
       <tr>
         <td className="empty"></td>
-        <td className="niebieski" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="empty"></td>
-        <td className="niebieski" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="empty"></td>
-        <td className="empty"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="niebieski" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="empty"></td>
-        <td className="empty"></td>
-        <td className="zolty" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="empty"></td>
-        <td className="zolty" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="empty"></td>
-      </tr>
-      <tr>
         <td className="empty"></td>
         <td className="empty"></td>
         <td className="empty"></td>
         <td className="empty"></td>
         <td className="empty"></td>
-        <td className="empty"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="niebieski" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="blue" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
         <td className="empty"></td>
         <td className="empty"></td>
         <td className="empty"></td>
@@ -386,19 +352,19 @@ class App extends React.Component {
       </tr>
       <tr>
         <td className="empty"></td>
-        <td className="niebieski" id={id+=1}><img src={square[id]} alt=""/></td>
+        <td className="blue" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
         <td className="empty"></td>
-        <td className="niebieski" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="empty"></td>
-        <td className="empty"></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="niebieski" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
+        <td className="blue" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
         <td className="empty"></td>
         <td className="empty"></td>
-        <td className="zolty" id={id+=1}><img src={square[id]} alt=""/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="blue" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
         <td className="empty"></td>
-        <td className="zolty" id={id+=1}><img src={square[id]} alt=""/></td>
+        <td className="empty"></td>
+        <td className="yellow" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="yellow" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
         <td className="empty"></td>
       </tr>
       <tr>
@@ -408,9 +374,43 @@ class App extends React.Component {
         <td className="empty"></td>
         <td className="empty"></td>
         <td className="empty"></td>
-        <td className="niebieski" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
-        <td className="walk" id={id+=1}><img src={square[id]} alt=""/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="blue" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+      </tr>
+      <tr>
+        <td className="empty"></td>
+        <td className="blue" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="blue" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="blue" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="yellow" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+        <td className="yellow" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="empty"></td>
+      </tr>
+      <tr>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="empty"></td>
+        <td className="blue" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
+        <td className="walk" id={id+=1}><img src={square[id]} alt="" className="pawn"/></td>
         <td className="empty"></td>
         <td className="empty"></td>
         <td className="empty"></td>
@@ -443,7 +443,7 @@ function steps(){
 class Step extends React.Component {
   constructor(props) {super(props);this.state = {value: null,};}
   render() {return (
-      <img onClick={() => this.setState({value: steps()})} src={square[greenUser1.track[greenUser1.current]]}></img>
+      <img onClick={() => this.setState({value: steps()})} src={square[greenUser1.track[greenUser1.current]]} className="pawn"></img>
   );}}
 
 function start(){
