@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e5dfdf;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+* {
+  text-decoration: none;
+  font-family: Nunito, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+#header {
+  z-index: 10;
+  background-color: #f6f4f3;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#right_hdr {
+  padding-right: 1rem;
+  float: right;
+}
+
+#left_hdr>* {
+  margin-right: 1rem;
+}
+
+#right_hdr>* {
+  margin-right: 0.1rem;
+  color: #7f4677;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+#right_hdr button {
+  background-color: inherit;
+  border: none;
+}
+
+.btn_hdr {
+  text-transform: uppercase;
+}
+
+#left_hdr {
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+
+}
+
+#calendar {
+  border-radius: 1rem;
+  margin-top: 1rem;
+  width: 75%;
+  padding: 1rem 5rem;
+  background-color: #f1edeb;
+}
+
+#main_app,
+#calendar_link {
+  width: 100%;
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+#main_app {
+  background-color: #201633;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+#search {
+  border: 0.1rem #7f4677 solid;
+  border-radius: 0.2rem;
+  width: 19rem;
+  padding-left: 1rem;
+  height: 2.5rem;
+  font-size: 1rem;
+}
+
+a {
+  color: inherit;
+}
+
+#calendar_link {
+  background-color: #51895d;
+  padding: 0.2rem;
+}
+
+#links_mp {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#cal_hdr {
+  text-align: center;
+  color: #4b5563;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+#madeBy {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#madeBy>img {
+  height: 6rem;
+  width: auto;
+}
+
+#mainPage {
+  background-color: #e5dfdf;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+#aside img {
+  height: 3rem;
+  width: auto;
+}
+
+#aside_content {
+  z-index: 20;
+  background: #f6f4f3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  padding: 1rem;
+}
+
+
+#aside_content>* {
+  margin-bottom: 1rem;
+}
+
+#aside {
+  z-index: 20;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#footer {
+  overflow: hidden;
+}
+
+.game {
+  background-color: #ffffff;
+  width: 5rem;
+  height: 8rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0.2rem;
+}
+
+.games {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 10rem;
+}
+
+.game_img {
+  height: 10rem;
+}
+
+#filters {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.fltrBtn {
+  color: #7f4677;
+  background: none;
+}
+
+.fltrBtn,
+.fltrBtn-Sel {
+  border-radius: 15px;
+  border: solid 2px #7f4677;
+  font-weight: bold;
+  margin-left: 5px;
+  width: 5.5rem;
+  height: 2rem;
+}
+
+.fltrBtn-Sel {
+  background-color: #7f4677;
+  color: white;
+}
+
+#filters_aside {
+  display: flex;
+  flex-direction: column;
+}
+
+
+#filters_aside>.fltrBtn,
+#filters_aside>.fltrBtn-Sel {
+  height: 50%;
+}
+
+.year {
+  min-width: 5rem;
+  height: 2rem;
+  font-size: 1.1rem;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.month {
+  margin-top: 2rem;
+  font-weight: bold;
+  width: 10rem;
+  position: absolute;
+  text-align: center;
+}
